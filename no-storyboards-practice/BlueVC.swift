@@ -9,6 +9,7 @@
 import UIKit
 
 class BlueVC: UIViewController {
+    var yellowVC: YellowVC!
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -27,7 +28,11 @@ class BlueVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func loadYellowView(sender: AnyObject) {
+        yellowVC = YellowVC()
+        self.presentViewController(yellowVC, animated: true, completion: nil)
+    }
 
 }
 
