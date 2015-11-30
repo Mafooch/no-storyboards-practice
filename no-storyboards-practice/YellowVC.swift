@@ -10,6 +10,8 @@ import UIKit
 
 class YellowVC: UIViewController {
     var redVC: RedVC!
+    var blueVC: BlueVC!
+    
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -33,5 +35,9 @@ class YellowVC: UIViewController {
     @IBAction func loadRedView(sender: AnyObject) {
         redVC = RedVC()
         self.presentViewController(redVC, animated: true, completion: nil)
+    }
+    @IBAction func goBackToBlue(sender: AnyObject) {
+        blueVC = BlueVC()
+        self.presentViewController(blueVC, animated: true, completion: nil)
     }
 }

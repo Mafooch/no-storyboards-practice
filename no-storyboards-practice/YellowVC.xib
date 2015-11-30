@@ -24,11 +24,22 @@
                         <action selector="loadRedView:" destination="-1" eventType="touchUpInside" id="aTs-P2-igS"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6p-Tn-Ikx">
+                    <rect key="frame" x="271" y="332" width="58" height="30"/>
+                    <state key="normal" title="Go Back">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goBackToBlue:" destination="-1" eventType="touchUpInside" id="vGD-zM-RW9"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="dBa-gL-2aG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AXF-Fc-RtU"/>
                 <constraint firstItem="dBa-gL-2aG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="HDw-Du-yAI"/>
+                <constraint firstItem="U6p-Tn-Ikx" firstAttribute="top" secondItem="dBa-gL-2aG" secondAttribute="bottom" constant="17" id="Tsw-7D-6jp"/>
+                <constraint firstItem="U6p-Tn-Ikx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gYB-ld-jKH"/>
             </constraints>
         </view>
     </objects>
