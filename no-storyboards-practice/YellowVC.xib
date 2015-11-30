@@ -14,7 +14,22 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBa-gL-2aG">
+                    <rect key="frame" x="266" y="285" width="68" height="30"/>
+                    <state key="normal" title="Go to Red">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="loadRedView:" destination="-1" eventType="touchUpInside" id="aTs-P2-igS"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="dBa-gL-2aG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AXF-Fc-RtU"/>
+                <constraint firstItem="dBa-gL-2aG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="HDw-Du-yAI"/>
+            </constraints>
         </view>
     </objects>
 </document>

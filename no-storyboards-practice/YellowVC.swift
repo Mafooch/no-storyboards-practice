@@ -9,6 +9,7 @@
 import UIKit
 
 class YellowVC: UIViewController {
+    var redVC: RedVC!
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -29,4 +30,8 @@ class YellowVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func loadRedView(sender: AnyObject) {
+        redVC = RedVC()
+        self.presentViewController(redVC, animated: true, completion: nil)
+    }
 }
